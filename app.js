@@ -21,7 +21,10 @@ const PORT = process.env.PORT || 3500;
 // CORS configuration
 app.use(
   cors({
-    origin: ["https://entnt-frontend-five.vercel.app", "http://localhost:3000"], // Valid frontend URLs
+    origin: [
+      "https://entnt-frontend-five.vercel.app/",
+      "http://localhost:3000",
+    ], // Valid frontend URLs
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // Enable credentials if necessary
