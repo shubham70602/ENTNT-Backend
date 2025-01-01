@@ -22,7 +22,6 @@ const PORT = process.env.PORT || 3500;
 app.use(
   cors({
     origin: [
-      "https://entnt-frontend-five.vercel.app",
       "https://entnt-frontend-a01758bh9-shubh2.vercel.app", // Add the correct URL here
       "http://localhost:5173",
     ], // Valid frontend URLs
