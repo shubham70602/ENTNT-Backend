@@ -23,7 +23,7 @@ app.use(
   cors({
     origin: [
       "https://entnt-frontend-a01758bh9-shubh2.vercel.app", // Add the correct URL here
-      "http://localhost:5173",
+      "http://localhost:5173","*",
     ], // Valid frontend URLs
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
