@@ -22,10 +22,9 @@ const PORT = process.env.PORT || 3500;
 app.use(
   cors({
     origin: [
-      "https://entnt-frontend-a01758bh9-shubh2.vercel.app", // Add the correct URL here
-      "http://localhost:5173",
-      "*",
-      "https://shubhamkannojiyaentntproject.netlify.app",
+      "https://shubhamkannojiyaentntproject.netlify.app", // Netlify frontend URL
+      "https://entnt-frontend-a01758bh9-shubh2.vercel.app", // Vercel frontend URL
+      "http://localhost:5173", // Localhost for development
     ], // Valid frontend URLs
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
